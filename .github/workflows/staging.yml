@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: srv43.niagahoster.com
-        username: u4723880
-        password: gadis08
+        username: ${{secrets.ftp_username}}
+        password: ${{secrets.ftp_password}}
         server-dir: /public_html/staging.sbmind.id/
